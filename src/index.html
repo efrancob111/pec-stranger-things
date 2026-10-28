@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 <html>
@@ -6,31 +7,120 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Stranger Things</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Stranger Things</h1>
+
+    <nav class="header__nav">
+  <a href="#sinopsis" class="header__link">Sinopsis</a>
+  <a href="#personajes" class="header__link">Personajes</a>
+  <a href="#temporadas" class="header__link">Temporadas</a>
+   <a href="#trailer" class="header__link">Trailer</a>
+  <a href="#awards" class="header__link">Premios</a>
+  <a href="#facts" class="header__link">Datos de Interes</a>
+</nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2 class="hero__title">La serie que revolucionó Netflix</h2>
+      <p class="hero__description">
+        Stranger Things es una serie de ciencia ficción ambientada en
+los años 80,
+        llena de misterio, aventura y elementos sobrenaturales.
       </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
+      <img src="assets/images/portada.webp" alt="Icono" class="Icono">
+    </section>
+    <section id="sinopsis" class="section">
+      <h2 class="section__title">
+  <i class="fa-solid fa-film"></i>Sinopsis</h2>
+   
+      <p class="section__text">
+        La desaparición de un niño en la localidad de Hawkins
+desencadena una serie
+        de acontecimientos relacionados con experimentos secretos y
+una dimensión
+        paralela conocida como el Upside Down.
+      </p>
+    </section>
+    <section id="trailer" class="section">
+    <h2 class="section__title">
+    <i class="fa-solid fa-film"></i>Tráiler Oficial</h2>
+
+     <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/CUv2mLF2cm0"
+      title="Tráiler Stranger Things"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+    <section id="personajes" class="characters">
+    <h2 class="section__title">
+    <i class="fa-solid fa-film"></i>Personajes principales</h2>
+    
+      <div class="characters__cards">
+        <article class="card">
+
+          <h3 class="card__title">Eleven</h3>
+
+          <p class="card__text">Niña con habilidades psíquicas.</p>
+          <img class="card__img"  src="assets/images/Millie Boby Brown.webp" alt="Eleven">
+        </article>
+        <article class="card">
+          <h3 class="card__title">Mike Wheeler</h3>
+          <p class="card__text">Líder del grupo de amigos.</p>
+           <img class="card__img"  src="assets/images/Mike Wheler.webp" alt="Mike Wheeler">
+        </article>
+        <article class="card">
+          <h3 class="card__title">Dustin Henderson</h3>
+          <p class="card__text">Inteligente y divertido.</p>
+             <img class="card__img" src="assets/images/Dustin Henderson.webp" alt="Dustin Henderson">
+        </article>
+        <article class="card">
+          <h3 class="card__title">Jim Hopper</h3>
+          <p class="card__text">Jefe de policía de Hawkins.</p>
+             <img class="card__img"  src="assets/images/Jim Hopper.webp" alt="Jim Hopper">
+        </article>
+      </div>
+    </section>
+        <section id="temporadas" class="Temporadas">
+    <h2 class="section__title">
+    <i class="fa-solid fa-film"></i>Temporadas</h2>
+      <ul class="season-list">
+        <li class="season-list__item">Temporada 1</li>
+        <li class="season-list__item">Temporada 2</li>
+        <li class="season-list__item">Temporada 3</li>
+        <li class="season-list__item">Temporada 4</li>
+        <li class="season-list__item">Temporada 5</li>
+      </ul>
+    </section>
+     <section id="awards" class="section">
+    <h2 class="section__title">
+    <i class="fa-solid fa-film"></i>Premios y Reconocimientos</h2>
+
+   <div class="section__text">
+    Stranger Things ha ganado numerosos premios Emmy y se ha convertido en
+    una de las series top  más vistas.
+   </div>
+</section>
+ <section id="facts" class="section">
+    <h2 class="section__title">
+    <i class="fa-solid fa-film"></i>Datos de la serie</h2>
+    <ul class="season-list">
+    <li class="season-list__item">Ambientada en los años 80.</li>
+    <li class="season-list__item">Inspirada en obras de Stephen King.</li>
+    <li class="season-list__item">Su estreno fue en 2016.</li>
+  </ul>
+</section>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">
+      PEC 1 HTML y CSS Avanzado - Stranger Things
+    </p>
+  </footer>
+  <script type ="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
