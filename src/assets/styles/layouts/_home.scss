@@ -1,5 +1,15 @@
 @use "../variables" as v;
 @use "../functions" as f;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -104,13 +114,28 @@ text-align: center;
   .Icono {
     width: 95%;
   }
+  .header__title {
+    font-size: 2rem;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header__link {
+    font-size: 0.9rem;
+  }
 }
+
 .video-container {
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 600px;
   margin: 2rem auto;
-  padding-bottom: 56.25%;
+  padding-bottom: 50%;
   height: 0;
 }
 
