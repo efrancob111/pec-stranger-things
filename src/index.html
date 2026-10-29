@@ -104,6 +104,7 @@ una dimensión
    <div class="section__text">
     Stranger Things ha ganado numerosos premios Emmy y se ha convertido en
     una de las series top  más vistas.
+    
    </div>
 </section>
  <section id="facts" class="section">
@@ -115,12 +116,34 @@ una dimensión
     <li class="season-list__item">Su estreno fue en 2016.</li>
   </ul>
 </section>
+<section class="favoriteSeries">
+
+  <h2 class="Mis-Series-Favoritas">Series Favoritas</h2>
+  <h3>Stranger Things</h3>
+  <P>Por su historia y evolución de los personajes e intriga y ciencia ficción</P>
+  <ul id="favoriteSeries"></ul>
+  <script type ="module" src="./assets/scripts/list-series.js"></script>
+</section>
   </main>
   <footer class="footer">
     <p class="footer__text">
-      PEC 1 HTML y CSS Avanzado - Stranger Things
+      PEC 1 HTML y CSS Avanzado - Stranger Thing
     </p>
+    <div class="like-container">
+  <button id="likeBtn" class="like-btn">👍 Me gusta</button>
+  <span id="likeCount">0</span>
+
+  <button id="dislikeBtn" class="disLikes">👎 Me gusta</button>
+  <span id="dislikeCount">0</span>
+</div>
+
+<script type="module" src="assets/scripts/script.js"></script>
+
+
   </footer>
   <script type ="module" src="./assets/scripts/main.js"></script>
+  <button onclick="window.scrollTo(0, 0)">
+    ⬆️ Arriba
+</button>
   </body>
 </html>
